@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Purchase Test on Chrome"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="54.238">
+  <properties />
+  
+  
+            <testcase name="purchaseCase" time="26.413" classname="com.demo.web.tests.PurchaseTest1" />
+                <testcase name="purchaseCase" time="27.825" classname="com.demo.web.tests.PurchaseTest1" />
+      
+</testsuite>

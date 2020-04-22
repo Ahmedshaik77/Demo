@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Demo]" parallel="tests">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Purchase Test on Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.demo.web.tests.PurchaseTest1">
+        <methods>
+          <include name="tear"/>
+          <include name="set"/>
+          <include name="tearDownSuite"/>
+          <include name="tearDown"/>
+          <include name="setupSuite"/>
+          <include name="purchaseCase" invocation-numbers="1"/>
+          <include name="setUpTest"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.demo.web.tests.PurchaseTest1 -->
+    </classes>
+  </test> <!-- Purchase Test on Chrome(failed) -->
+</suite> <!-- Failed suite [Demo] -->
